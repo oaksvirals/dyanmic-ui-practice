@@ -1,3 +1,7 @@
+:root {
+  --charcoal: #1d1d1d;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,6 +15,10 @@ body {
 
 .app {
   height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 225px 1fr;
+  background-color: var(--charcoal);
 }
 
 header {
@@ -20,18 +28,26 @@ header {
   padding-top: 25px;
 }
 
+h1 {
+  color: white;
+}
+
 .nav {
-  padding-top: 60px;
+  padding: 20px;
+  margin-top: 50px;
   width: 50%;
+  border: 1px solid white;
+  border-radius: 25px;
 }
 
 .nav-list {
   display: flex;
-  align-content: space-between;
-  justify-content: space-between;
+  align-content: center;
+  justify-content: space-around;
   gap: 25px;
 }
 
 .nav-option {
   list-style-type: none;
+  color: white;
 }
