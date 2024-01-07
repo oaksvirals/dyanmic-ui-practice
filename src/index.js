@@ -1,3 +1,1 @@
-import './style.css';
-
-// Let's code!
+import "./style.css";

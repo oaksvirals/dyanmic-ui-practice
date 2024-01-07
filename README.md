@@ -1,26 +1,30 @@
 # Webpack Starter Template
 
 ## Description
+
 This is my personal Webpack starter template configured with essential loaders and plugins. It's set up to help me kickstart my JavaScript projects quickly without having to configure everything from scratch. It includes configurations for processing CSS, images, fonts, and HTML.
 
 ## Prerequisites
+
 Make sure you have Node.js installed on your system (https://nodejs.org/).
 
 ## Installation
+
 To use this template for a new project, follow these steps:
 
 1. Clone the repository:
-git clone https://github.com/oaksvirals/webpack-starter.git your-new-project-name
+   git clone https://github.com/oaksvirals/webpack-starter.git your-new-project-name
 
 2. Navigate into your new project directory:
-cd your-new-project-name
+   cd your-new-project-name
 
 3. Install the necessary dependencies:
-npm install
+   npm install
 
 ## Usage
 
 ### Development
+
 To start the development server:
 npm run dev
 

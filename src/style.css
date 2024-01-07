@@ -1,3 +1,37 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.app {
+  height: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.nav {
+  padding-top: 60px;
+  width: 50%;
+}
+
+.nav-list {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.nav-option {
+  list-style-type: none;
 }
