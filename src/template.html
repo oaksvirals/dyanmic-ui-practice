@@ -9,13 +9,49 @@
     <div class="app">
       <header>
         <h1>Dynamic UI Practice</h1>
-        <div class="nav">
-          <ul class="nav-list">
-            <li class="nav-option" id="nav-link-1">Home</li>
-            <li class="nav-option" id="nav-link-2">About</li>
-            <li class="nav-option" id="nav-link-3">Contact</li>
-            <li class="nav-option" id="nav-link-4">Shop</li>
-            <li class="nav-option" id="nav-link-5">FAQs</li>
+        <div class="main-nav">
+          <ul>
+            <li class="nav-item">Home</li>
+            <li class="nav-item">
+              About
+              <div class="dropdown-content about-drop">
+                <ul>
+                  <li>Mission</li>
+                  <li>Our Team</li>
+                  <li>How It Works</li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              Contact
+              <div class="dropdown-content contact-drop">
+                <ul>
+                  <li>Support</li>
+                  <li>Sales</li>
+                  <li>Billing</li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              Shopping
+              <div class="dropdown-content shopping-drop">
+                <div class="shopping-col-1">
+                  <ul>
+                    <li>category 1</li>
+                    <li>category 2</li>
+                    <li>category 3</li>
+                  </ul>
+                </div>
+                <div class="shopping-col-2">
+                  <ul>
+                    <li>category 4</li>
+                    <li>category 5</li>
+                    <li>category 6</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">FAQs</li>
           </ul>
         </div>
       </header>
