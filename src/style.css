@@ -1,7 +1,7 @@
 :root {
-  --charcoal: #1d1d1d;
-  --accent: rgb(0, 0, 0, 0.66);
-  --accentOpac: rgb(0, 0, 0, 0.66);
+  --main: #064e3b;
+  --accent: #10b981;
+  --accent2: #6ee7b7;
 }
 
 * {
@@ -45,8 +45,8 @@ header {
 }
 
 .main-nav {
-  background-color: var(--accent);
-  width: 60%;
+  background-color: var(--main);
+  width: 65%;
   border-radius: 50px;
   position: relative;
   display: flex;
@@ -65,6 +65,11 @@ header {
   padding: 18px;
 }
 
+.nav-item:hover {
+  cursor: pointer;
+  background-color: var(--accent);
+}
+
 .main-nav .nav-item:last-child {
   margin-right: 0;
 }
@@ -76,14 +81,18 @@ header {
   left: 20px;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid var(--accentOpac);
+  border-bottom: 10px solid var(--accent);
 }
 
 .dropdown-content li {
   padding: 5px;
 }
 
-.shopping-drop {
+.dropdown-content li:hover {
+  color: var(--main);
+}
+
+.shopping-drop .inner-dropdown {
   display: flex;
   justify-content: center;
 }
@@ -95,14 +104,14 @@ header {
 .dropdown-content {
   visibility: hidden;
   position: absolute;
-  left: 0px;
+  left: -25px;
   top: 100%;
   z-index: 1000;
-  border: 25px solid white;
+  border: 25px solid transparent;
 }
 
 .inner-dropdown {
-  background-color: var(--accentOpac);
+  background-color: var(--accent);
   padding: 10px;
   width: 250px;
   border-radius: 8px;
