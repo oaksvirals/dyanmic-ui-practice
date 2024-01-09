@@ -11,49 +11,55 @@
         <h1>Dynamic UI Practice</h1>
         <div class="main-nav">
           <ul>
-            <li class="nav-item">
+            <li class="nav-item" id="home">
               <div class="home-icon"></div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="about">
               About
               <div class="dropdown-content about-drop">
                 <ul>
-                  <li>Mission</li>
-                  <li>Our Team</li>
-                  <li>How It Works</li>
+                  <div class="inner-dropdown">
+                    <li>Mission</li>
+                    <li>Our Team</li>
+                    <li>How It Works</li>
+                  </div>
                 </ul>
               </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="contact">
               Contact
               <div class="dropdown-content contact-drop">
                 <ul>
-                  <li>Support</li>
-                  <li>Sales</li>
-                  <li>Billing</li>
+                  <div class="inner-dropdown">
+                    <li>Support</li>
+                    <li>Sales</li>
+                    <li>Billing</li>
+                  </div>
                 </ul>
               </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="shopping">
               Shopping
               <div class="dropdown-content shopping-drop">
-                <div class="shopping-col-1">
-                  <ul>
-                    <li>Category 1</li>
-                    <li>Category 2</li>
-                    <li>Category 3</li>
-                  </ul>
-                </div>
-                <div class="shopping-col-2">
-                  <ul>
-                    <li>Category 4</li>
-                    <li>Category 5</li>
-                    <li>Category 6</li>
-                  </ul>
+                <div class="inner-dropdown">
+                  <div class="shopping-col-1">
+                    <ul>
+                      <li>Category 1</li>
+                      <li>Category 2</li>
+                      <li>Category 3</li>
+                    </ul>
+                  </div>
+                  <div class="shopping-col-2">
+                    <ul>
+                      <li>Category 4</li>
+                      <li>Category 5</li>
+                      <li>Category 6</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </li>
-            <li class="nav-item">FAQs</li>
+            <li class="nav-item" id="faq">FAQs</li>
           </ul>
         </div>
       </header>

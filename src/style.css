@@ -30,10 +30,6 @@ header {
   padding-top: 25px;
 }
 
-.hidden {
-  visibility: hidden;
-}
-
 .nav-item,
 .nav-item li {
   list-style-type: none;
@@ -45,7 +41,6 @@ header {
   background-image: url(./assets/home.png);
   width: 18px;
   height: 18px;
-  /* background-position: center; */
   background-size: cover;
 }
 
@@ -68,7 +63,6 @@ header {
   display: inline-block;
   margin-right: 35px;
   padding: 18px;
-  /* background-color: red; */
 }
 
 .main-nav .nav-item:last-child {
@@ -99,13 +93,21 @@ header {
 }
 
 .dropdown-content {
-  display: none;
+  visibility: hidden;
   position: absolute;
   left: 0px;
-  top: 150%;
+  top: 100%;
   z-index: 1000;
+  border: 25px solid white;
+}
+
+.inner-dropdown {
   background-color: var(--accentOpac);
   padding: 10px;
   width: 250px;
   border-radius: 8px;
+}
+
+.reveal {
+  visibility: visible;
 }
