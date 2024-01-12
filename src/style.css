@@ -75,7 +75,7 @@ header {
   padding: 18px;
 }
 
-.nav-item:hover {
+.desktop-nav me .nav-item:hover {
   cursor: pointer;
   background-color: var(--accent);
 }
@@ -176,4 +176,35 @@ header {
 
 .hide {
   display: none;
+}
+
+/* Slider */
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.frame {
+  border: 1px dashed blue;
+  width: 850px;
+  height: 525px;
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+.slider {
+  border: 1px dashed red;
+  width: 720px;
+  height: 480px;
+  grid-column: 2 / 3;
+}
+
+.dots {
+  border: 1px dashed green;
+  width: 720px;
+  height: 30px;
+  grid-column: 2 / 3;
 }
