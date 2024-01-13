@@ -7,6 +7,17 @@ dynamicMobileNavigation();
 
 // slider.js
 
+// animation
+const fadeIn = [
+  { opacity: "0", transform: "scale(0.9)" },
+  { opacity: "1", transform: "scale(1)" },
+];
+
+const fadeTiming = {
+  duration: 750,
+  iterations: 1,
+};
+
 const totalSlides = 5;
 let slideNumber = 1;
 
@@ -18,10 +29,12 @@ function nextSlide() {
     slide.classList.contains("slide-" + slideNumber)
   ) {
     slide.classList.remove("slide-" + slideNumber);
+    slide.animate(fadeIn, fadeTiming);
     slideNumber++;
     slide.classList.add("slide-" + slideNumber);
   } else {
     slide.classList.remove("slide-" + slideNumber);
+    slide.animate(fadeIn, fadeTiming);
     slideNumber = 1;
     slide.classList.add("slide-" + slideNumber);
   }
