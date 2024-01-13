@@ -48,10 +48,12 @@ function previousSlide() {
 
   if (slideNumber === 1 && slide.classList.contains("slide-" + slideNumber)) {
     slide.classList.remove("slide-" + slideNumber);
+    slide.animate(fadeIn, fadeTiming);
     slideNumber = totalSlides;
     slide.classList.add("slide-" + slideNumber);
   } else {
     slide.classList.remove("slide-" + slideNumber);
+    slide.animate(fadeIn, fadeTiming);
     slideNumber--;
     slide.classList.add("slide-" + slideNumber);
   }
@@ -77,13 +79,15 @@ function selectDot() {
 
   if (this.classList.contains("dot-active")) {
     console.log("not this one!");
-  }
+  } else {
+    slide.classList.remove("slide-1");
+    slide.classList.remove("slide-2");
+    slide.classList.remove("slide-3");
+    slide.classList.remove("slide-4");
+    slide.classList.remove("slide-5");
 
-  slide.classList.remove("slide-1");
-  slide.classList.remove("slide-2");
-  slide.classList.remove("slide-3");
-  slide.classList.remove("slide-4");
-  slide.classList.remove("slide-5");
+    slide.animate(fadeIn, fadeTiming);
+  }
 
   if (this.classList.contains("dot-1")) {
     slideNumber = 1;
